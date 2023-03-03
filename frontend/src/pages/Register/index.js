@@ -11,7 +11,6 @@ export default function Register() {
     const [whatsapp, setWhatsapp] = useState('');
     const [city, setCity] = useState('');
     const [uf, setUF] = useState('');
-
     const navigate = useNavigate();
 
     async function handleRegistrer(e) {
@@ -31,8 +30,6 @@ export default function Register() {
         } catch (err) {
             alert('Erro no cadastro, tente novamente.'); 
         }
-    
-
     }
 
     return (
@@ -78,15 +75,9 @@ export default function Register() {
                         />
 
                     </div>
-
                     <button className='button' type = "submit"> Cadastrar </button>  
-
                 </form>
             </div> 
-
         </div>
-
     )
-
-
 }

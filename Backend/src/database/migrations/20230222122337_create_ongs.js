@@ -3,7 +3,6 @@
  * @returns { Promise<void> }
  */
 
-// Método UP: responsável pela criação da tabela
 exports.up = function(knex) {
     return knex.schema.createTable('ongs', function(table) {
         table.string('id').primary();
@@ -21,7 +20,6 @@ exports.up = function(knex) {
  * @returns { Promise<void> }
  */
 
-// Método DOWN: deletar a tabela em caso de um problema
 exports.down = function(knex) {
     return knex.schema.dropTable('ongs');
 };

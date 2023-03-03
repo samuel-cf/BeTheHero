@@ -72,7 +72,7 @@ export default function Profile() {
                         </li>
                     )
                 )}
-
+                
             </ul>
 
         </div>
